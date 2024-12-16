@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="contact-info">Contact Us</div>
+        <div class="auth-links">
+            <a href="Login.html">Login/Sign Up</a>
+        </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <li><a href="index.html"><img src="images/logo.png" alt="LOGO"  width="250px"></a></li>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Consultation.html">Consultation</a></li>
+                <li><a href="Pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section 1: Consultation About -->
+    <section class="about-intro">
+        <div class="aboutus-image">
+            <img src="images/medical-supplies-near-notebook.jpg" alt="consultation image" width="100%">
+            <div class="about-text-overlay">
+                <h1>|Consultation|</h1>
+                <p>Our compassionate professionals are here to guide you every step of the way. Schedule a consultation today to start your journey toward better health with Good Care.
+                </p>
+            </div>
+    </section>
+<section class="full-width-section">
+    <div class="section-content">
+        <!-- Consultation Form Section -->
+    <section class="consultation-form">
+        <h2>Consultation Form</h2>
+        <!-- Patient Information -->
+        <h3>Patient Information</h3>
+        <form action="#" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <!-- Doctor Selection -->
+            <h3>Doctor Selection</h3>
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="" disabled selected>Select Doctor</option>
+                <option value="dr-smith">Dr. John Doe (Cardiologist)</option>
+                <option value="dr-jones">Dr. Jane Smith (Pediatrician)</option>
+                <option value="dr-brown">Dr. Michael Lee (Orthopedic Surgeon)</option>
+                <option value="dr-smith">Dr. Emily Taylor (Neurologist)</option>
+                <option value="dr-jones">Dr. Richard Evans (Dermatologist)</option>
+                <option value="dr-brown">Dr. Sarah White (Oncologist)</option>
+                <option value="dr-smith">Dr. William Brown (General Surgeon)</option>
+                <option value="dr-jones">Dr. Nancy Green (Psychiatrist)</option>
+                <option value="dr-brown">Dr. Robert Davis (Endocrinologist)</option>
+            </select>
+            <!-- Appointment Details -->
+            <h3>Appointment Details</h3>
+            <label for="consultation-mode">Consultation Mode:</label>
+            <select id="consultation-mode" name="consultation-mode" required>
+                <option value="" disabled selected>Select Mode</option>
+                <option value="in-person">In Person</option>
+                <option value="online">Online</option>
+            </select>
+
+            <label for="preferred-date">Preferred Date:</label>
+            <input type="date" id="preferred-date" name="preferred-date" required>
+
+            <label for="notes">Notes/Comments:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+
+            <div class="form-buttons">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </section>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="Login.html">Login/Sign Up</a></li>
+                        <li><a href="Consultation.html">HOTLINE 112 (Emergency)</a></li>
+                    </ul>
+                    <p>&copy;This Website is Copyrighted</p>
+                </nav>
+            </div>
+
+            <div class="footer-center">
+                <img src="images/logo.png" alt="Company Logo" class="footer-logo">
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-header">Good Care Hospital</h3>
+                <p class="footer-paragraph">Your health is our priority, and we're here for you 24/7, ensuring a healthier tomorrow for everyone.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

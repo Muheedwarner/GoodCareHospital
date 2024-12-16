@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="contact-info">Contact Us</div>
+        <div class="auth-links">
+            <a href="Login.html">Login/Sign Up</a>
+        </div>
+    </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <li><a href="index.html"><img src="images/logo.png" alt="LOGO"  width="250px"></a></li>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Consultation.html">Consultation</a></li>
+                <li><a href="Pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section 1: Checkout About -->
+    <section class="about-intro">
+        <div class="aboutus-image">
+            <img src="images/medical-supplies-near-notebook.jpg" alt="consultation image" width="100%">
+            <div class="about-text-overlay">
+                <h1>|Checkout|</h1>
+                <p>Finalize your order and securely checkout with just a few clicks with Good Care.
+                </p>
+            </div>
+    </section>
+<section class="full-width-section">
+    <div class="section-content">
+        <header>
+            <h1>Your Checkout</h1>
+        </header>
+
+
+
+
+
+
+        <div class="container">
+            <h1>Items Summary</h1>
+            <div class="cart-items">
+                <!-- Cart items will be displayed here -->
+        </div>
+        <div class="cart-total">
+            <span class="cart-total-label">Total: </span>
+            <span class="cart-total-price"></span>
+        </div>
+
+        <h2>Delivery Details</h2>
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Select Payment Method:</label>
+                <select id="payment-method" required>
+                    <option value="cash-on-delivery">Cash on Delivery</option>
+                    <option value="credit-debit-card">Credit / Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="date" id="delivery-date" min="${new Date().toISOString().split('T')[0]}" required>
+            </div>
+        </form>
+
+        <button class="btn-purchase" id="confirm-purchase">Confirm Purchase</button>
+        <button class="btn-cart" id="go-back">Go Back to Cart</button>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="Login.html">Login/Sign Up</a></li>
+                        <li><a href="Consultation.html">HOTLINE 112 (Emergency)</a></li>
+                    </ul>
+                    <p>&copy;This Website is Copyrighted</p>
+                </nav>
+            </div>
+
+            <div class="footer-center">
+                <img src="images/logo.png" alt="Company Logo" class="footer-logo">
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-header">Good Care Hospital</h3>
+                <p class="footer-paragraph">Your health is our priority, and we're here for you 24/7, ensuring a healthier tomorrow for everyone.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="checkout.js"></script>
+</body>
+</html>
+</body>
+</html>
